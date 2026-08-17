@@ -324,3 +324,94 @@ img {
         grid-template-columns: 1fr;
     }
 }
+/* ==================== MOBILE HERO COMPACT FIX ==================== */
+
+@media screen and (max-width: 650px) {
+
+    /* Smaller navbar */
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .nav-cv-button {
+        display: none !important;
+    }
+
+  
+
+    .hero {
+        min-height: auto !important;
+        padding: 95px 0 55px !important;
+    }
+
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 35px !important;
+    }
+
+    /* Text appears first */
+
+    .hero-content {
+        order: 1 !important;
+        width: 100%;
+        display: block !important;
+    }
+
+    /* Picture appears after text */
+
+    .hero-visual {
+        order: 2 !important;
+
+        width: 280px !important;
+        height: 300px !important;
+        min-height: 0 !important;
+
+        margin: 0 auto !important;
+    }
+
+    .hero-background-shape {
+        width: 260px !important;
+        height: 260px !important;
+
+        top: 20px !important;
+        left: 50% !important;
+
+        transform: translateX(-50%) !important;
+    }
+
+    .hero-avatar {
+        width: 225px !important;
+        height: 225px !important;
+
+        position: absolute !important;
+        top: 35px !important;
+        left: 50% !important;
+
+        transform: translateX(-50%) !important;
+
+        object-fit: cover !important;
+        object-position: center 30% !important;
+    }
+
+  
+
+    .hero-decoration {
+        display: none !important;
+    }
+
+    /* Reduce title size */
+
+    .hero h1 {
+        font-size: clamp(2.6rem, 13vw, 3.6rem);
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 0.88rem;
+    }
+}
