@@ -985,11 +985,11 @@ img {
 
 .progress-track {
     width: 100%;
-    height: 7px;
+    height: 8px;
 
     overflow: hidden;
 
-    background-color: var(--border);
+    background-color: #eadff0;
     border-radius: 50px;
 }
 
@@ -1000,22 +1000,21 @@ img {
     background:
         linear-gradient(
             90deg,
-            var(--primary),
-            #ffac61
+          #8b69d9,
+          #f27670
         );
 
     border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(139, 105, 217, 0.3);
 
     transition: width 1.3s ease;
 }
-
-/* ==================== PROJECTS SECTION ==================== */
 
 .projects {
     background-color: var(--surface);
 }
 
-/* Project filter */
+
 
 .project-filters {
     margin-bottom: 40px;
@@ -1049,8 +1048,6 @@ img {
     border-color: var(--primary);
     transform: translateY(-2px);
 }
-
-/* Project grid */
 
 .projects-grid {
     display: grid;

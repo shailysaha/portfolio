@@ -225,3 +225,14 @@ if (contactForm && nameInput && emailInput && subjectInput && messageInput) {
         }
     });
 }
+const progressBars = document.querySelectorAll(".progress-bar");
+
+function fillProgressBars() {
+    progressBars.forEach(function (bar) {
+        const progressValue = bar.getAttribute("data-progress");
+
+        bar.style.width = progressValue + "%";
+    });
+}
+
+fillProgressBars();
